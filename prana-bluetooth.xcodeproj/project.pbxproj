@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23BC58172514F674005C65C9 /* prana_bluetoothApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC58162514F674005C65C9 /* prana_bluetoothApp.swift */; };
+		23BC58172514F674005C65C9 /* PranaBluetoothApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC58162514F674005C65C9 /* PranaBluetoothApp.swift */; };
 		23BC58192514F674005C65C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC58182514F674005C65C9 /* ContentView.swift */; };
 		23BC581B2514F676005C65C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BC581A2514F676005C65C9 /* Assets.xcassets */; };
 		23BC581E2514F676005C65C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BC581D2514F676005C65C9 /* Preview Assets.xcassets */; };
+		23BC582A2514F6DD005C65C9 /* Prana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC58292514F6DD005C65C9 /* Prana.swift */; };
+		23BC582E2514F6FE005C65C9 /* BluetoothController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC582D2514F6FE005C65C9 /* BluetoothController.swift */; };
+		23BC58312514F9BB005C65C9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC58302514F9BB005C65C9 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23BC58132514F674005C65C9 /* prana-bluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "prana-bluetooth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23BC58162514F674005C65C9 /* prana_bluetoothApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prana_bluetoothApp.swift; sourceTree = "<group>"; };
+		23BC58162514F674005C65C9 /* PranaBluetoothApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PranaBluetoothApp.swift; sourceTree = "<group>"; };
 		23BC58182514F674005C65C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23BC581A2514F676005C65C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23BC581D2514F676005C65C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		23BC581F2514F676005C65C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23BC58292514F6DD005C65C9 /* Prana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prana.swift; sourceTree = "<group>"; };
+		23BC582D2514F6FE005C65C9 /* BluetoothController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothController.swift; sourceTree = "<group>"; };
+		23BC58302514F9BB005C65C9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +58,9 @@
 		23BC58152514F674005C65C9 /* prana-bluetooth */ = {
 			isa = PBXGroup;
 			children = (
-				23BC58162514F674005C65C9 /* prana_bluetoothApp.swift */,
+				23BC58162514F674005C65C9 /* PranaBluetoothApp.swift */,
 				23BC58182514F674005C65C9 /* ContentView.swift */,
+				23BC58282514F6B6005C65C9 /* Model */,
 				23BC581A2514F676005C65C9 /* Assets.xcassets */,
 				23BC581F2514F676005C65C9 /* Info.plist */,
 				23BC581C2514F676005C65C9 /* Preview Content */,
@@ -67,6 +74,16 @@
 				23BC581D2514F676005C65C9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23BC58282514F6B6005C65C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23BC58292514F6DD005C65C9 /* Prana.swift */,
+				23BC582D2514F6FE005C65C9 /* BluetoothController.swift */,
+				23BC58302514F9BB005C65C9 /* Utils.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BC58312514F9BB005C65C9 /* Utils.swift in Sources */,
 				23BC58192514F674005C65C9 /* ContentView.swift in Sources */,
-				23BC58172514F674005C65C9 /* prana_bluetoothApp.swift in Sources */,
+				23BC58172514F674005C65C9 /* PranaBluetoothApp.swift in Sources */,
+				23BC582E2514F6FE005C65C9 /* BluetoothController.swift in Sources */,
+				23BC582A2514F6DD005C65C9 /* Prana.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +287,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"prana-bluetooth/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "prana-bluetooth/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -276,8 +298,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tapptitude.prana-bluetooth";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alextud.prana.bluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,8 +311,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"prana-bluetooth/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "prana-bluetooth/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -297,8 +322,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tapptitude.prana-bluetooth";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alextud.prana.bluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
